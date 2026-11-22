@@ -1,0 +1,52 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Competition data and private assets
+data/
+output/
+submissions/
+
+# Model artifacts
+*.joblib
+*.pkl
+*.pickle
+*.model
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+secrets/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Local analysis outputs
+*.csv
+
+# Data and research artifacts
+*.csv
+*.parquet
+*.wav
+*.flac
+*.zip
+*.pdf
+*.joblib
+*.pkl
