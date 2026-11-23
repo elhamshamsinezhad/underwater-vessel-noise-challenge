@@ -19,9 +19,9 @@ The work focused on building robust machine learning pipelines under challenging
   - A regression model estimates the conditional target value.
 - Combined both outputs into a final prediction:
 
-\[
+$$
 \hat{y} = P(\text{presence}) \times \hat{y}_{\text{conditional}}
-\]
+$$
 
 - Developed a missingness-robust modeling pipeline.
 - Compared alternative model components and submission candidates.
