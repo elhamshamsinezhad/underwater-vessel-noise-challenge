@@ -20,6 +20,11 @@ This project explores a machine learning pipeline designed to address these chal
 **Best submission ID:** `nudHwRfm`
 
 The reported leaderboard score is the official competition metric and should not be interpreted as RMSE.
+## Detailed Case Study
+
+For a detailed overview of the problem, modeling strategy, validation experiments, and competition results, see:
+
+**[Read the Full Competition Case Study](CASE_STUDY.md)**
 
 ## Technical Approach
 
