@@ -30,7 +30,6 @@ $$
 - Used grouped validation experiments.
 - Evaluated RMSE, MAE, bias, R², and vessel-presence classification metrics.
 - Conducted ablation and sensitivity analyses to understand model behavior.
-
   ### Grouped Cross-Validation and Leakage Control
 
 Three group-aware validation folds were generated to evaluate model performance under source-level and background-level separation.
