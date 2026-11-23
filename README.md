@@ -72,7 +72,7 @@ A regressor estimates the vessel share conditional on positive presence.
 The final prediction is computed as:
 
 $$
-\hat{y} = \operatorname{clip}\left(P(\text{presence}) \times \hat{y}_{\text{conditional}}, 0, 1\right)
+\hat{y} = P(\text{presence}) \times \hat{y}_{\text{conditional}}
 $$
 
 Predictions from the three folds are averaged to produce the final ensemble output.
