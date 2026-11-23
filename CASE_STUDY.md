@@ -57,6 +57,7 @@ The generated fold reports confirmed zero overlap in MMSI groups, source clips, 
 
 **Validation limitation:** All three folds share the site Richards Bay. Therefore, this validation design evaluates generalization across separated vessel-source groups and background stations, but does not establish generalization to entirely unseen sites.
 
+
 ### Selected Validation Results
 
 | Experiment | Result |
