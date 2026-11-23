@@ -31,6 +31,32 @@ $$
 - Evaluated RMSE, MAE, bias, R², and vessel-presence classification metrics.
 - Conducted ablation and sensitivity analyses to understand model behavior.
 
+  ### Grouped Cross-Validation and Leakage Control
+
+Three group-aware validation folds were generated to evaluate model performance under source-level and background-level separation.
+
+Each fold contains 20,000 training samples and 5,000 validation samples. The split strategy enforces separation at multiple levels:
+
+- **Vessel sources:** MMSI groups were assigned exclusively to either training or validation.
+- **Source recordings:** No overlap in source clip identifiers (`clip_uid`) was detected.
+- **Background recordings:** Station tokens were separated between training and validation.
+- **Background windows:** No shared background window identifiers were detected.
+
+The generated fold reports confirmed zero overlap in MMSI groups, source clips, station tokens, and background windows across all three folds.
+
+| Validation property | Fold 1 | Fold 2 | Fold 3 |
+|---|---:|---:|---:|
+| Training MMSI groups | 78 | 79 | 79 |
+| Validation MMSI groups | 39 | 38 | 38 |
+| Training station groups | 6 | 6 | 6 |
+| Validation station groups | 3 | 3 | 3 |
+| Shared source MMSIs | 0 | 0 | 0 |
+| Shared source clips | 0 | 0 | 0 |
+| Shared station tokens | 0 | 0 | 0 |
+| Shared background windows | 0 | 0 | 0 |
+
+**Validation limitation:** All three folds share the site Richards Bay. Therefore, this validation design evaluates generalization across separated vessel-source groups and background stations, but does not establish generalization to entirely unseen sites.
+
 ### Selected Validation Results
 
 | Experiment | Result |
