@@ -4,6 +4,7 @@ __pycache__/
 *.pyd
 .pytest_cache/
 .mypy_cache/
+.ipynb_checkpoints/
 
 # Virtual environments
 .venv/
@@ -17,6 +18,7 @@ env/
 # Competition data and private assets
 data/
 output/
+outputs/
 submissions/
 
 # Model artifacts
@@ -24,6 +26,14 @@ submissions/
 *.pkl
 *.pickle
 *.model
+
+# Generated data and media
+*.csv
+*.parquet
+*.wav
+*.flac
+*.zip
+*.pdf
 
 # Local configuration and secrets
 .env
@@ -35,18 +45,7 @@ secrets/
 *.log
 *.tmp
 *.bak
+
+# OS
 .DS_Store
 Thumbs.db
-
-# Local analysis outputs
-*.csv
-
-# Data and research artifacts
-*.csv
-*.parquet
-*.wav
-*.flac
-*.zip
-*.pdf
-*.joblib
-*.pkl

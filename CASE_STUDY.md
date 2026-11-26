@@ -1,4 +1,4 @@
-﻿# Underwater Vessel Noise Prediction
+# Underwater Vessel Noise Prediction
 ## Machine Learning Competition Case Study
 
 ### Project Overview
